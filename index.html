@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>AI-Powered Weather Assistant</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main class="container">
+    <h1>AI-Powered Weather Assistant</h1>
+
+    <section class="search">
+      <input id="city" type="text" placeholder="Enter city (e.g., Hyderabad)" />
+      <button id="btnSearch">Get Weather</button>
+      <span id="status"></span>
+    </section>
+
+    <section id="results" class="hidden">
+      <div class="card">
+        <h2 id="loc"></h2>
+        <p id="current"></p>
+      </div>
+
+      <div class="forecast">
+        <h3>Next Days</h3>
+        <div id="forecastCards" class="cards"></div>
+      </div>
+
+      <div class="advice">
+        <h3>AI Tips</h3>
+        <div id="tips" class="tips"></div>
+      </div>
+    </section>
+
+    <footer>
+      <small>Built with HTML/CSS/JS + Node + Weather & AI APIs</small>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
